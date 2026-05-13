@@ -1,0 +1,165 @@
+.qe-loader-wrapper {
+    width: 100%;
+  background: rgba(0, 0, 0, .9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  inset: 0;
+  z-index: 9999;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  animation: logoBreath 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.letter {
+  font-family: "Barlow", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 13vw;
+  color: #ff1a1a;
+  display: inline-block;
+  line-height: 1;
+  animation: letterDash 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* "quick" letters stagger in from left */
+.q {
+  animation-delay: 0s;
+}
+.u {
+  animation-delay: 0.04s;
+}
+.i {
+  animation-delay: 0.08s;
+}
+.c {
+  animation-delay: 0.12s;
+}
+.k {
+  animation-delay: 0.16s;
+}
+
+/* "Eat" letters drop from above with slight delay */
+.E {
+  animation-name: letterDrop;
+  animation-delay: 0.28s;
+}
+.a {
+  animation-name: letterDrop;
+  animation-delay: 0.34s;
+}
+.t {
+  animation-name: letterDrop;
+  animation-delay: 0.4s;
+}
+
+/* The "E" in Eat is uppercase + slightly larger to mimic the logo */
+.E {
+  font-size: 14.5vw;
+  color: #ff1a1a;
+}
+
+@keyframes letterDash {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px) skewX(-8deg);
+  }
+  18% {
+    opacity: 1;
+    transform: translateX(4px) skewX(-2deg);
+  }
+  28% {
+    transform: translateX(0) skewX(0deg);
+  }
+  72% {
+    transform: translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+  88% {
+    opacity: 0;
+    transform: translateX(30px) skewX(4deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-60px) skewX(-8deg);
+  }
+}
+
+@keyframes letterDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-55px) scaleY(0.6);
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(5px) scaleY(1.04);
+  }
+  28% {
+    transform: translateY(0) scaleY(1);
+  }
+  72% {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+  88% {
+    opacity: 0;
+    transform: translateY(35px) scaleY(0.7);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-55px) scaleY(0.6);
+  }
+}
+
+/* Subtle underline swoosh */
+.swoosh {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #ff1a1a;
+  border-radius: 3px;
+  transform-origin: left center;
+  animation: swooshIn 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation-delay: 0.42s;
+}
+
+@keyframes swooshIn {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  22% {
+    transform: scaleX(1.04);
+    opacity: 1;
+  }
+  30% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  85% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+.logo-container {
+  position: relative;
+}

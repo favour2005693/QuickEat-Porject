@@ -1,0 +1,36 @@
+/* @tailwind base;
+/*@tailwind components;
+/*@tailwind utilities; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ 
+}
+
+/* variables */
+:root{
+  --danger-red: #e02528;
+} 
+
+
+/* importing google font locally */
+@font-face {
+  font-family: 'poppins';
+  src: url('./assets/Font/Poppins-Regular.ttf')
+  format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url('./assets/Font/Poppins-Bold.ttf')
+  format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+

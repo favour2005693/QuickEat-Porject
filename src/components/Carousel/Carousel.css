@@ -1,0 +1,42 @@
+.slider-container {
+  overflow: hidden;
+  padding: 20px;
+  cursor: grab;
+}
+
+.slider-track {
+  display: flex;
+  gap: 16px;
+  will-change: transform;
+}
+
+.food-card {
+  min-width: 250px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.food-card:hover {
+  transform: scale(1.03);
+}
+
+.food-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.food-card h3 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+}
+
+.food-card p {
+  font-weight: bold;
+  color: #e02528;
+}

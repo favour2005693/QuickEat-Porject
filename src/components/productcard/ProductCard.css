@@ -1,0 +1,78 @@
+.product-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.product-card {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px #333;
+  position: relative;
+}
+.product-badge{
+ width: 40px;
+ height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.heartIcon{
+  width: 30px;
+  
+}
+.product-card:hover{
+    transform: translateY(-5px)
+}
+.product-image {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+.rating-image{
+    width: 90px;
+    object-fit: cover;
+}
+.product-card-details {
+  padding: .5rem;
+} 
+.add-to-cart-btn {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "poppins", sans-serif;
+  border: 2px solid var(--danger-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-price{
+  font-weight: 1000;
+  font-family: 'poopins',sans-serif;
+
+}
+.old-price{
+  text-decoration: line-through;
+  font-weight: 300;
+  font-family: 'poopins',sans-serif;
+}
+.product-card-rating-wrapper{
+  display: flex;
+ gap: 1rem;
+ margin: .7rem;
+}
+.under-line{
+  margin-bottom: 1rem;
+}

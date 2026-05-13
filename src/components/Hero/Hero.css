@@ -1,0 +1,41 @@
+.hero-main-wrapper-container {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  flex: 1;
+}
+.hero-text-content-wrapper{
+  padding: 1rem;
+}
+.hero-image {
+  width: 100px;
+}
+.hero-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.Search-input {
+  padding: 0.5rem 2rem 0.8rem 2rem;
+  border: 2px solid var(--danger-red);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.Search-input:focus {
+  outline: none;
+}
+.searchIcon {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.search-button {
+  padding: 0.8rem 2.5rem;
+  border-radius: 5px;
+  background-color: var(--danger-red);
+  border: none;
+  color: #fff;
+  font-weight: 400;
+}

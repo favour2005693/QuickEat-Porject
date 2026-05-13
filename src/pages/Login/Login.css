@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login-container {
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+form {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.input {
+   width: 25em;
+    padding: .7rem .4rem .7rem .5rem;
+    border-radius: 30px;
+    border: none;
+    background-color:#dddddd;
+}
+.input:focus {
+  outline: none;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.check-box-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+.remember-me {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.login-button-container {
+  display: flex;
+  justify-content: center;
+}
+.login-button {
+  padding: 0.6rem 7rem 0.6em 8rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background: #e02528;
+  color: #fff;
+  cursor: pointer;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.authentication-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.authentication-button {
+  padding: 0.1rem 2rem 0.2em 1rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 30px;
+  margin-top: 1rem;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+.authentication-icon {
+  width: 30px;
+}
+.Create-Account {
+  cursor: pointer;
+}
+.dont-have-account {
+  margin-top: 1rem;
+  text-align: center;
+}

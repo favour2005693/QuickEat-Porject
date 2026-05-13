@@ -1,0 +1,30 @@
+/* .product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+  gap: 1rem;
+}
+.product-card {
+  overflow: hidden;
+  background-color: #ddd;
+  border-radius: 5px;
+  font-family: "poppins", sans-serif;
+line-height: 1.5;}
+.product-card-details {
+  padding: 1rem;
+}
+.pro-img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1.5;
+}
+.add-to-cart-btn {
+  width: 100%;
+  background: var(--danger-red);
+  padding: 0.5rem 2.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-family: "poppins", sans-serif;
+} */
